@@ -7,11 +7,7 @@ import com.tuusuario.pinterestfeed.data.model.Photo
 import retrofit2.HttpException
 import java.io.IOException
 
-/**
- * PagingSource para carga incremental de fotos
- * Maneja estados de carga, error y retry
- */
-class `PhotoPagingSource.kt`(
+class PhotoPagingSource(
     private val api: PhotoApi,
     private val useMockData: Boolean = false
 ) : PagingSource<Int, Photo>() {
@@ -27,14 +23,10 @@ class `PhotoPagingSource.kt`(
 
         return try {
             val photos = if (useMockData) {
-                // Usar datos mock para testing sin internet
                 mockApi.getPhotos(page, loadSize)
             } else {
-                // Usar API real de Picsum
                 api.getPhotos(page, loadSize).map { it.toPhoto() }
             }
-
-            Log.d(tag, "Successfully loaded ${photos.size} photos for page $page")
 
             LoadResult.Page(
                 data = photos,
@@ -42,22 +34,17 @@ class `PhotoPagingSource.kt`(
                 nextKey = if (photos.isEmpty()) null else page + 1
             )
         } catch (e: IOException) {
-            Log.e(tag, "Network error loading page $page", e)
             LoadResult.Error(e)
         } catch (e: HttpException) {
-            Log.e(tag, "HTTP error loading page $page", e)
             LoadResult.Error(e)
         } catch (e: Exception) {
-            Log.e(tag, "Unknown error loading page $page", e)
             LoadResult.Error(e)
         }
     }
 
     override fun getRefreshKey(state: PagingState<Int, Photo>): Int? {
-        // Restaurar la posición más cercana al scroll actual
-        return state.anchorPosition?.let { anchorPosition ->
-            val anchorPage = state.closestPageToPosition(anchorPosition)
-            anchorPage?.prevKey?.plus(1) ?: anchorPage?.nextKey?.minus(1)
-        }
+        val anchor = state.anchorPosition ?: return null
+        val page = state.closestPageToPosition(anchor)
+        return page?.prevKey?.plus(1) ?: page?.nextKey?.minus(1)
     }
 }

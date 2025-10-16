@@ -1,13 +1,34 @@
 package com.tuusuario.pinterestfeed.ui.screens.feed
 
-import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.staggeredgrid.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.staggeredgrid.LazyStaggeredGridState
+import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridItemSpan
+import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowUpward
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -16,12 +37,15 @@ import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
 import com.tuusuario.pinterestfeed.data.model.Photo
-import com.tuusuario.pinterestfeed.ui.components.*
+import com.tuusuario.pinterestfeed.ui.components.EmptyStateItem
+import com.tuusuario.pinterestfeed.ui.components.ErrorRetryItem
+import com.tuusuario.pinterestfeed.ui.components.LoadingItem
+import com.tuusuario.pinterestfeed.ui.components.PhotoItem
 import kotlinx.coroutines.launch
 
 /**
- * Pantalla principal del feed tipo Pinterest
- * Grid staggered con scroll infinito y estados de carga
+ * Pantalla principal del feed tipo Pinterest con grid staggered.
+ * Sin animación de ítems para máxima compatibilidad.
  */
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable
@@ -31,18 +55,18 @@ fun FeedScreen(
 ) {
     val photos = viewModel.photosFlow.collectAsLazyPagingItems()
     val scrollState = viewModel.scrollState.collectAsState()
-    val staggeredGridState = rememberLazyStaggeredGridState(
+    val staggeredGridState = androidx.compose.foundation.lazy.staggeredgrid.rememberLazyStaggeredGridState(
         initialFirstVisibleItemIndex = scrollState.value.firstVisibleItemIndex,
         initialFirstVisibleItemScrollOffset = scrollState.value.firstVisibleItemScrollOffset
     )
     val scope = rememberCoroutineScope()
-    val showScrollToTop by remember {
+    val showScrollToTop by androidx.compose.runtime.remember {
         derivedStateOf { staggeredGridState.firstVisibleItemIndex > 5 }
     }
 
     // Guardar posición del scroll
     LaunchedEffect(staggeredGridState) {
-        snapshotFlow {
+        androidx.compose.runtime.snapshotFlow {
             Pair(
                 staggeredGridState.firstVisibleItemIndex,
                 staggeredGridState.firstVisibleItemScrollOffset
@@ -70,7 +94,10 @@ fun FeedScreen(
                         }
                     }
                 ) {
-                    Icon(Icons.Default.ArrowUpward, "Scroll to top")
+                    androidx.compose.material3.Icon(
+                        imageVector = Icons.Filled.ArrowUpward,
+                        contentDescription = "Scroll to top"
+                    )
                 }
             }
         }
@@ -103,7 +130,8 @@ fun FeedScreen(
 }
 
 /**
- * Grid staggered optimizado con keys estables
+ * Grid staggered optimizado con keys estables.
+ * Sin Modifier.animateItem()/animateItemPlacement() para evitar issues.
  */
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
@@ -128,9 +156,7 @@ private fun PhotoGrid(
                 PhotoItem(
                     photo = photo,
                     onClick = { onPhotoClick(photo) },
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .animateItemPlacement()
+                    modifier = Modifier.fillMaxWidth()
                 )
             }
         }
@@ -155,7 +181,7 @@ private fun PhotoGrid(
 }
 
 /**
- * Estado de carga inicial con skeletons
+ * Estado de carga inicial con indicador centrado.
  */
 @Composable
 private fun InitialLoadingState() {
@@ -167,7 +193,7 @@ private fun InitialLoadingState() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            CircularProgressIndicator(modifier = Modifier.size(48.dp))
+            CircularProgressIndicator(modifier = Modifier)
             Text(
                 text = "Loading photos...",
                 style = MaterialTheme.typography.bodyLarge
