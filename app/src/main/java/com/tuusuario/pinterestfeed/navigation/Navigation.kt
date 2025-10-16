@@ -1,5 +1,6 @@
 package com.tuusuario.pinterestfeed.navigation
 
+import android.net.Uri
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -15,9 +16,17 @@ import com.tuusuario.pinterestfeed.ui.screens.feed.FeedScreen
  */
 sealed class Screen(val route: String) {
     object Feed : Screen("feed")
-    object Detail : Screen("detail/{photoId}/{photoUrl}/{photoWidth}/{photoHeight}/{photoTitle}/{photoAuthor}") {
+
+    // Segmentos con placeholders (mantenemos el formato original)
+    object Detail : Screen(
+        "detail/{photoId}/{photoUrl}/{photoWidth}/{photoHeight}/{photoTitle}/{photoAuthor}"
+    ) {
+        // ✅ Codificamos los valores que pueden contener '/' o espacios
         fun createRoute(photo: Photo): String {
-            return "detail/${photo.id}/${photo.url}/${photo.width}/${photo.height}/${photo.title}/${photo.author}"
+            val encUrl = Uri.encode(photo.url)
+            val encTitle = Uri.encode(photo.title ?: "")
+            val encAuthor = Uri.encode(photo.author ?: "")
+            return "detail/${photo.id}/$encUrl/${photo.width}/${photo.height}/$encTitle/$encAuthor"
         }
     }
 }
@@ -54,13 +63,21 @@ fun AppNavigation() {
                 navArgument("photoAuthor") { type = NavType.StringType }
             )
         ) { backStackEntry ->
+            // ✅ Decodificamos los strings codificados en la ruta
+            val id = backStackEntry.arguments?.getString("photoId").orEmpty()
+            val url = Uri.decode(backStackEntry.arguments?.getString("photoUrl").orEmpty())
+            val width = backStackEntry.arguments?.getInt("photoWidth") ?: 0
+            val height = backStackEntry.arguments?.getInt("photoHeight") ?: 0
+            val title = Uri.decode(backStackEntry.arguments?.getString("photoTitle").orEmpty())
+            val author = Uri.decode(backStackEntry.arguments?.getString("photoAuthor").orEmpty())
+
             val photo = Photo(
-                id = backStackEntry.arguments?.getString("photoId") ?: "",
-                url = backStackEntry.arguments?.getString("photoUrl") ?: "",
-                width = backStackEntry.arguments?.getInt("photoWidth") ?: 0,
-                height = backStackEntry.arguments?.getInt("photoHeight") ?: 0,
-                title = backStackEntry.arguments?.getString("photoTitle") ?: "",
-                author = backStackEntry.arguments?.getString("photoAuthor") ?: ""
+                id = id,
+                url = url,
+                width = width,
+                height = height,
+                title = title,
+                author = author
             )
 
             DetailScreen(
