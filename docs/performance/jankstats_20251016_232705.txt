@@ -1,0 +1,298 @@
+--------- beginning of main
+10-17 05:27:03.496 I/.apps.wellbeing( 1614): AssetManager2(0x752f27affff8) locale list changing from [] to [en-US]
+10-17 05:27:03.514 I/.apps.wellbeing( 1614): AssetManager2(0x752f27af7358) locale list changing from [] to [en-US]
+10-17 05:27:03.527 I/.apps.wellbeing( 1614): AssetManager2(0x752f27af98d8) locale list changing from [] to [en-US]
+10-17 05:27:03.530 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b00318) locale list changing from [] to [en-US]
+10-17 05:27:03.557 I/.apps.wellbeing( 1614): AssetManager2(0x752f27af8c58) locale list changing from [] to [en-US]
+10-17 05:27:03.561 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b02bb8) locale list changing from [] to [en-US]
+--------- beginning of system
+10-17 05:27:03.561 V/WindowManagerShell(  995): onTransitionReady(transaction=3161095930596)
+10-17 05:27:03.562 V/WindowManager(  736): Sent Transition (#24) createdAt=10-17 05:27:03.239 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=58 effectiveUid=10218 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity } baseActivity=ComponentInfo{com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity} topActivity=ComponentInfo{com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity} origActivity=null realActivity=ComponentInfo{com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity} numActivities=1 lastActiveTime=700545 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7814430 Task{fc34ba6 #58 type=standard A=10218:com.tuusuario.pinterestfeed.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{1f0d8a9 com.tuusuario.pinterestfeed.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(284, 660 - 796, 1740) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2337) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 24 }
+10-17 05:27:03.562 V/WindowManager(  736):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-17 05:27:03.562 V/WindowManager(  736):     info={id=24 t=OPEN f=0x0 trk=1 r=[0@Point(0, 0)] c=[
+10-17 05:27:03.562 V/WindowManager(  736):         {WCT{RemoteToken{7814430 Task{fc34ba6 #58 type=standard A=10218:com.tuusuario.pinterestfeed.debug}}} m=OPEN f=NONE leash=Surface(name=Task=58)/@0x7c5fead sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+10-17 05:27:03.562 V/WindowManager(  736):         {WCT{RemoteToken{882be95 Task{f168428 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x46ce616 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+10-17 05:27:03.562 V/WindowManager(  736):         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c2bc854 showWhenLocked=false})/@0x7b36fd8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+10-17 05:27:03.562 V/WindowManager(  736):     ]}
+10-17 05:27:03.563 V/WindowManagerShell(  995): onTransitionReady (#24) android.os.BinderProxy@b9df65f: {id=24 t=OPEN f=0x0 trk=1 r=[0@Point(0, 0)] c=[
+10-17 05:27:03.563 V/WindowManagerShell(  995):         {m=OPEN f=NONE leash=Surface(name=Task=58)/@0x4050a86 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+10-17 05:27:03.563 V/WindowManagerShell(  995):         {m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x8fe7f47 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+10-17 05:27:03.563 V/WindowManagerShell(  995):         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c2bc854 showWhenLocked=false})/@0x70e0374 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}
+10-17 05:27:03.563 V/WindowManagerShell(  995):     ]}
+10-17 05:27:03.566 V/WindowManagerShell(  995): Playing animation for (#24) android.os.BinderProxy@b9df65f@1
+10-17 05:27:03.566 V/ShellRecents(  995): RecentsTransitionHandler.startAnimation: no controller found
+10-17 05:27:03.566 V/WindowManagerShell(  995): Transition doesn't have explicit remote, search filters for match for {id=24 t=OPEN f=0x0 trk=1 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=58)/@0x4050a86 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x8fe7f47 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c2bc854 showWhenLocked=false})/@0x70e0374 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+10-17 05:27:03.566 V/WindowManagerShell(  995):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@adf52a3 windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@95609a0, appThread = android.app.IApplicationThread$Stub$Proxy@2510959, debugName = overlayBackTransition }}
+10-17 05:27:03.566 V/WindowManagerShell(  995):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@130491e, appThread = android.app.IApplicationThread$Stub$Proxy@30a75ff, debugName = LauncherToDream }}
+10-17 05:27:03.568 V/WindowManagerShell(  995):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@da21fcc, appThread = android.app.IApplicationThread$Stub$Proxy@77fe215, debugName = QuickstepLaunchHome }}
+10-17 05:27:03.568 V/WindowManagerShell(  995):  Delegate animation for (#24) to null
+10-17 05:27:03.569 V/WindowManagerShell(  995): start default transition animation, info = {id=24 t=OPEN f=0x0 trk=1 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=58)/@0x4050a86 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x8fe7f47 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{c2bc854 showWhenLocked=false})/@0x70e0374 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0}]}
+10-17 05:27:03.570 V/WindowManagerShell(  995): loadAnimation: anim=android.view.animation.AnimationSet@ec1e2e0 animAttr=0x13 type=OPEN isEntrance=false
+10-17 05:27:03.571 V/WindowManagerShell(  995): loadAnimation: anim=android.view.animation.AnimationSet@2124d0c animAttr=0x12 type=OPEN isEntrance=true
+10-17 05:27:03.573 V/WindowManagerShell(  995):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@290c88a
+10-17 05:27:03.587 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b00c78) locale list changing from [] to [en-US]
+10-17 05:27:03.587 W/ActivityTaskManager(  736): takeTaskSnapshot: taskId=31 not found or not visible
+10-17 05:27:03.587 W/ActivityTaskManager(  736): takeTaskSnapshot: taskId=47 not found or not visible
+10-17 05:27:03.590 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b25e38) locale list changing from [] to [en-US]
+10-17 05:27:03.596 I/.apps.wellbeing( 1614): AssetManager2(0x752f27af7998) locale list changing from [] to [en-US]
+10-17 05:27:03.604 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b29358) locale list changing from [] to [en-US]
+10-17 05:27:03.609 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2c238) locale list changing from [] to [en-US]
+10-17 05:27:03.614 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2d1d8) locale list changing from [] to [en-US]
+10-17 05:27:03.615 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2d818) locale list changing from [] to [en-US]
+10-17 05:27:03.625 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2b298) locale list changing from [] to [en-US]
+10-17 05:27:03.628 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b283b8) locale list changing from [] to [en-US]
+10-17 05:27:03.630 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b270f8) locale list changing from [] to [en-US]
+10-17 05:27:03.632 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b044b8) locale list changing from [] to [en-US]
+10-17 05:27:03.635 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b063f8) locale list changing from [] to [en-US]
+10-17 05:27:03.640 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b05138) locale list changing from [] to [en-US]
+10-17 05:27:03.644 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b01f38) locale list changing from [] to [en-US]
+10-17 05:27:03.654 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b27738) locale list changing from [] to [en-US]
+10-17 05:27:03.657 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b26dd8) locale list changing from [] to [en-US]
+10-17 05:27:03.660 I/.apps.wellbeing( 1614): AssetManager2(0x752f27aff378) locale list changing from [] to [en-US]
+10-17 05:27:03.675 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b02898) locale list changing from [] to [en-US]
+10-17 05:27:03.683 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b29cb8) locale list changing from [] to [en-US]
+10-17 05:27:03.686 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2ac58) locale list changing from [] to [en-US]
+10-17 05:27:03.698 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2cb98) locale list changing from [] to [en-US]
+10-17 05:27:03.702 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b2bf18) locale list changing from [] to [en-US]
+10-17 05:27:03.704 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b29fd8) locale list changing from [] to [en-US]
+10-17 05:27:03.706 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b21fb8) locale list changing from [] to [en-US]
+10-17 05:27:03.710 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b20398) locale list changing from [] to [en-US]
+10-17 05:27:03.712 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b29678) locale list changing from [] to [en-US]
+10-17 05:27:03.718 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b08338) locale list changing from [] to [en-US]
+10-17 05:27:03.720 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b21c98) locale list changing from [] to [en-US]
+10-17 05:27:03.724 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b25b18) locale list changing from [] to [en-US]
+10-17 05:27:03.726 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0e0f8) locale list changing from [] to [en-US]
+10-17 05:27:03.731 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0aef8) locale list changing from [] to [en-US]
+10-17 05:27:03.737 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b14b38) locale list changing from [] to [en-US]
+10-17 05:27:03.739 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0cb18) locale list changing from [] to [en-US]
+10-17 05:27:03.742 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b254d8) locale list changing from [] to [en-US]
+10-17 05:27:03.744 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b08c98) locale list changing from [] to [en-US]
+10-17 05:27:03.748 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b09918) locale list changing from [] to [en-US]
+10-17 05:27:03.750 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0a8b8) locale list changing from [] to [en-US]
+10-17 05:27:03.754 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b03838) locale list changing from [] to [en-US]
+10-17 05:27:03.757 I/.apps.wellbeing( 1614): AssetManager2(0x752f27afed38) locale list changing from [] to [en-US]
+10-17 05:27:03.759 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b05458) locale list changing from [] to [en-US]
+10-17 05:27:03.765 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b031f8) locale list changing from [] to [en-US]
+10-17 05:27:03.769 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b012b8) locale list changing from [] to [en-US]
+10-17 05:27:03.772 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b141d8) locale list changing from [] to [en-US]
+10-17 05:27:03.799 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b144f8) locale list changing from [] to [en-US]
+10-17 05:27:03.802 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b15df8) locale list changing from [] to [en-US]
+10-17 05:27:03.806 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b16118) locale list changing from [] to [en-US]
+10-17 05:27:03.812 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b11f78) locale list changing from [] to [en-US]
+10-17 05:27:03.827 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b13eb8) locale list changing from [] to [en-US]
+10-17 05:27:03.832 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b079d8) locale list changing from [] to [en-US]
+10-17 05:27:03.836 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b15178) locale list changing from [] to [en-US]
+10-17 05:27:03.840 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b125b8) locale list changing from [] to [en-US]
+10-17 05:27:03.849 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b08658) locale list changing from [] to [en-US]
+10-17 05:27:03.852 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b1a5d8) locale list changing from [] to [en-US]
+10-17 05:27:03.854 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b13558) locale list changing from [] to [en-US]
+10-17 05:27:03.858 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0b858) locale list changing from [] to [en-US]
+10-17 05:27:03.861 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b18378) locale list changing from [] to [en-US]
+10-17 05:27:03.862 V/WindowManagerShell(  995): Transition animation finished (aborted=false), notifying core (#24) android.os.BinderProxy@b9df65f@1
+10-17 05:27:03.865 V/WindowManager(  736): Finish Transition (#24): created at 10-17 05:27:03.239 collect-started=0.021ms request-sent=9.765ms started=15.76ms ready=319.728ms sent=321.794ms commit=17.497ms finished=626.138ms
+10-17 05:27:03.868 V/WindowManagerShell(  995): Track 1 became idle
+10-17 05:27:03.868 V/WindowManagerShell(  995): All active transition animations finished
+10-17 05:27:03.869 D/VRI[NexusLauncherActivity]( 1151): visibilityChanged oldVisibility=true newVisibility=false
+10-17 05:27:03.869 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b18058) locale list changing from [] to [en-US]
+10-17 05:27:03.873 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b24e98) locale list changing from [] to [en-US]
+10-17 05:27:03.876 E/BpTransactionCompletedListener(  582): Failed to transact (-32)
+10-17 05:27:03.876 D/NexusLauncherModelDelegate( 1151): notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+10-17 05:27:03.886 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b21338) locale list changing from [] to [en-US]
+10-17 05:27:03.891 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b20078) locale list changing from [] to [en-US]
+10-17 05:27:03.974 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b23598) locale list changing from [] to [en-US]
+10-17 05:27:04.000 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b1f0d8) locale list changing from [] to [en-US]
+10-17 05:27:04.008 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b22c38) locale list changing from [] to [en-US]
+10-17 05:27:04.017 D/nativeloader( 5539): Configuring clns-9 for other apk /data/app/~~T4q65eQcfZ4NfMt78mQHug==/com.tuusuario.pinterestfeed.debug-CQHAKLc4vVaCuukx_UMo7A==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~T4q65eQcfZ4NfMt78mQHug==/com.tuusuario.pinterestfeed.debug-CQHAKLc4vVaCuukx_UMo7A==/lib/x86_64:/data/app/~~T4q65eQcfZ4NfMt78mQHug==/com.tuusuario.pinterestfeed.debug-CQHAKLc4vVaCuukx_UMo7A==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.tuusuario.pinterestfeed.debug
+10-17 05:27:04.022 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b1fa38) locale list changing from [] to [en-US]
+10-17 05:27:04.034 I/erestfeed.debug( 5539): AssetManager2(0x752f27afc178) locale list changing from [] to [en-US]
+10-17 05:27:04.039 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b06a38) locale list changing from [] to [en-US]
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539): Currently set values for:
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539):   angle_gl_driver_selection_pkgs=[]
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539):   angle_gl_driver_selection_values=[]
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539): com.tuusuario.pinterestfeed.debug is not listed in per-application setting
+10-17 05:27:04.054 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0c7f8) locale list changing from [] to [en-US]
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539): ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539): com.tuusuario.pinterestfeed.debug is not listed in ANGLE allowlist or settings, returning default
+10-17 05:27:04.054 V/GraphicsEnvironment( 5539): Neither updatable production driver nor prerelease driver is supported.
+10-17 05:27:04.071 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b07cf8) locale list changing from [] to [en-US]
+10-17 05:27:04.075 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b08978) locale list changing from [] to [en-US]
+10-17 05:27:04.078 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b13558) locale list changing from [] to [en-US]
+10-17 05:27:04.080 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b08658) locale list changing from [] to [en-US]
+10-17 05:27:04.084 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b11938) locale list changing from [] to [en-US]
+10-17 05:27:04.088 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b12f18) locale list changing from [] to [en-US]
+10-17 05:27:04.097 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b1a5d8) locale list changing from [] to [en-US]
+10-17 05:27:04.098 W/OptProp (  736): Cannot read opt property android.window.PROPERTY_COMPAT_ENABLE_FAKE_FOCUS
+10-17 05:27:04.101 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b15178) locale list changing from [] to [en-US]
+10-17 05:27:04.103 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b125b8) locale list changing from [] to [en-US]
+10-17 05:27:04.104 D/BackgroundInstallControlService(  736): Package event received: 0
+10-17 05:27:04.104 D/BackgroundInstallControlService(  736): Package event received: 0
+10-17 05:27:04.107 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b10cb8) locale list changing from [] to [en-US]
+10-17 05:27:04.112 I/DisplayManager( 5539): Choreographer implicitly registered for the refresh rate.
+10-17 05:27:04.118 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b14818) locale list changing from [] to [en-US]
+10-17 05:27:04.119 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b11f78) locale list changing from [] to [en-US]
+10-17 05:27:04.123 I/erestfeed.debug( 5539): AssetManager2(0x752f27af98d8) locale list changing from [] to [en-US]
+10-17 05:27:04.124 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0e738) locale list changing from [] to [en-US]
+10-17 05:27:04.131 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b12298) locale list changing from [] to [en-US]
+10-17 05:27:04.145 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b144f8) locale list changing from [] to [en-US]
+10-17 05:27:04.149 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b15df8) locale list changing from [] to [en-US]
+10-17 05:27:04.149 E/ashmem  ( 5539): Pinning is deprecated since Android Q. Please use trim or other methods.
+10-17 05:27:04.164 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b141d8) locale list changing from [] to [en-US]
+10-17 05:27:04.185 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b012b8) locale list changing from [] to [en-US]
+10-17 05:27:04.211 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b10998) locale list changing from [] to [en-US]
+10-17 05:27:04.217 I/.apps.wellbeing( 1614): AssetManager2(0x752f27b0bb78) locale list changing from [] to [en-US]
+10-17 05:27:04.257 D/DesktopModeFlags( 5539): Toggle override initialized to: OVERRIDE_UNSET
+10-17 05:27:04.344 D/MainActivity( 5539): ✅ Coil ImageLoader configured with cache logging
+10-17 05:27:04.344 D/MainActivity( 5539): ═══════════════════════════════════════
+10-17 05:27:04.344 D/MainActivity( 5539): 🚀 Pinterest Feed App Started
+10-17 05:27:04.344 D/MainActivity( 5539): ═══════════════════════════════════════
+10-17 05:27:04.383 I/EGL_emulation( 5539): Opening libGLESv1_CM_emulation.so
+10-17 05:27:04.395 I/EGL_emulation( 5539): Opening libGLESv2_emulation.so
+10-17 05:27:04.411 W/HWUI    ( 5539): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-17 05:27:04.412 W/HWUI    ( 5539): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 05:27:04.425 W/HWUI    ( 5539): Unknown dataspace 0
+10-17 05:27:04.794 W/erestfeed.debug( 5539): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-17 05:27:04.794 W/erestfeed.debug( 5539): Common causes for lock verification issues are non-optimized dex code
+10-17 05:27:04.794 W/erestfeed.debug( 5539): and incorrect proguard optimizations.
+10-17 05:27:04.794 W/erestfeed.debug( 5539): Method boolean androidx.compose.runtime.snapshots.SnapshotStateList.conditionalUpdate$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-17 05:27:04.794 W/erestfeed.debug( 5539): Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateList.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-17 05:27:04.794 W/erestfeed.debug( 5539): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update(boolean, kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+10-17 05:27:04.795 W/erestfeed.debug( 5539): Method void androidx.compose.runtime.snapshots.SnapshotStateList.update$default(androidx.compose.runtime.snapshots.SnapshotStateList, boolean, kotlin.jvm.functions.Function1, int, java.lang.Object) failed lock verification and will run slower.
+10-17 05:27:04.930 D/PerformanceMonitor( 5539): ═══════════════════════════════════════
+10-17 05:27:04.930 D/PerformanceMonitor( 5539): 📊 JankStats Monitor Started
+10-17 05:27:04.943 D/PerformanceMonitor( 5539): Time: 05:27:04.930
+10-17 05:27:04.943 D/PerformanceMonitor( 5539): ═══════════════════════════════════════
+10-17 05:27:04.958 D/CoreBackPreview(  736): Window{8ec578d u0 com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6429a90, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+10-17 05:27:05.093 I/erestfeed.debug( 5539): Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-17 05:27:05.623 D/FeedViewModel( 5539): Scroll saved: index=0, offset=0
+10-17 05:27:05.633 I/HWUI    ( 5539): Davey! duration=1466ms; Flags=1, FrameTimelineVsyncId=39274, IntendedVsync=701404315078, Vsync=701837648394, InputEventId=0, HandleInputStart=701852809008, AnimationStart=701852813888, PerformTraversalsStart=701852963794, DrawStart=702767172025, FrameDeadline=701420981744, FrameStartTime=701852566067, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=702779377717, SyncStart=702832417486, IssueDrawCommandsStart=702832468276, SwapBuffers=702906200510, FrameCompleted=702923499327, DequeueBufferDuration=2984, QueueBufferDuration=274088, GpuCompleted=702923499327, SwapBuffersCompleted=702908656070, DisplayPresentTime=0, CommandSubmissionCompleted=702906200510, 
+10-17 05:27:05.638 I/ActivityTaskManager(  736): Displayed com.tuusuario.pinterestfeed.debug/com.tuusuario.pinterestfeed.MainActivity for user 0: +2s399ms
+10-17 05:27:05.657 D/PhotoPagingSource( 5539): Loading page 0 with size 40
+10-17 05:27:05.671 I/Choreographer( 5539): Skipped 63 frames!  The application may be doing too much work on its main thread.
+10-17 05:27:05.673 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=0&limit=40
+10-17 05:27:05.682 I/ImeTracker(  736): com.tuusuario.pinterestfeed.debug:35c04f95: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-17 05:27:05.685 I/GoogleInputMethodService( 1575): GoogleInputMethodService.onFinishInput():2085 
+10-17 05:27:05.688 I/ImeTracker(  736): system_server:14c9b418: onRequestHide at ORIGIN_SERVER reason IME_REQUESTED_CHANGED_LISTENER fromUser false
+10-17 05:27:05.689 I/ImeTracker(  736): system_server:14c9b418: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-17 05:27:05.689 I/Module  ( 1575): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+10-17 05:27:05.690 I/GoogleInputMethodService( 1575): GoogleInputMethodService.onStartInput():1346 onStartInput(EditorInfo{EditorInfo{packageName=com.tuusuario.pinterestfeed.debug, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-17 05:27:05.691 I/Module  ( 1575): DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+10-17 05:27:05.697 W/PackageConfigPersister(  736): App-specific configuration not found for packageName: com.tuusuario.pinterestfeed.debug and userId: 0
+10-17 05:27:05.699 D/InsetsController( 5539): hide(ime(), fromIme=false)
+10-17 05:27:05.699 I/ImeTracker( 5539): com.tuusuario.pinterestfeed.debug:35c04f95: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-17 05:27:05.700 I/FontLog ( 1327): (REDACTED) Received query %s, URI %s
+10-17 05:27:05.701 I/FontLog ( 1327): (REDACTED) Query [%s] resolved to %s
+10-17 05:27:05.702 I/FontLog ( 1327): (REDACTED) Fetch %s end status %s
+10-17 05:27:05.706 I/FontLog ( 1327): (REDACTED) Pulling font file for id = %d, cache size = %d
+10-17 05:27:05.712 D/BaseDepthController( 1151): setSurface:
+10-17 05:27:05.712 D/BaseDepthController( 1151): 	mWaitingOnSurfaceValidity: false
+10-17 05:27:05.712 D/BaseDepthController( 1151): 	mBaseSurface: null
+10-17 05:27:05.712 D/BaseDepthController( 1151): mSurface is null and mCurrentBlur is: 0
+10-17 05:27:05.713 D/StateManager( 1151): goToState - fromState: Normal, toState: Normal, partial trace:
+10-17 05:27:05.713 D/StateManager( 1151): 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 72a59688580715d19f0e415c69e80376c2f062d1648c80db6730905005a27c20:4)
+10-17 05:27:05.713 D/StateManager( 1151): 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 72a59688580715d19f0e415c69e80376c2f062d1648c80db6730905005a27c20:1)
+10-17 05:27:05.713 D/StateManager( 1151): 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 72a59688580715d19f0e415c69e80376c2f062d1648c80db6730905005a27c20:34)
+10-17 05:27:05.713 I/FontLog ( 1327): (REDACTED) Pulling font file for id = %d, cache size = %d
+10-17 05:27:05.713 D/StatsLog( 1151): LAUNCHER_ONSTOP
+10-17 05:27:05.714 D/StatsLog( 1151): LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+10-17 05:27:05.735 D/BackgroundInstallControlService(  736): Package event received: 0
+10-17 05:27:05.974 D/BoundBrokerSvc( 1327): onUnbind: Intent { act=com.google.android.gms.auth.aang.events.services.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-17 05:27:05.985 D/BoundBrokerSvc( 1596): onUnbind: Intent { act=com.google.android.gms.auth.service.START xflg=0x4 pkg=com.google.android.gms }
+10-17 05:27:06.023 W/WindowOnBackDispatcher(  995): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@357354f
+10-17 05:27:06.027 D/CoreBackPreview(  736): Window{c7e297e u0 Splash Screen com.tuusuario.pinterestfeed.debug EXITING}: Setting back callback null
+10-17 05:27:06.238 D/ActivityManager(  736): freezing 2832 com.google.android.gms.unstable
+10-17 05:27:06.315 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=0&limit=40 (642ms, unknown-length body)
+10-17 05:27:06.375 D/PhotoPagingSource( 5539): Loading page 1 with size 20
+10-17 05:27:06.377 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=1&limit=20
+10-17 05:27:06.414 D/ConnectivityService(  736): NetReassign [no changes] [c 0] [a 0] [i 1]
+10-17 05:27:06.447 I/NetworkObserver( 5539): ONLINE
+10-17 05:27:06.680 W/HWUI    ( 5539): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-17 05:27:06.680 W/HWUI    ( 5539): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-17 05:27:06.765 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=1&limit=20 (388ms, unknown-length body)
+10-17 05:27:06.879 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:06.879 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:06.935 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:06.972 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:06.992 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.001 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.063 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.064 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.124 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.124 I/HWUI    ( 5539): Davey! duration=737ms; Flags=0, FrameTimelineVsyncId=39988, IntendedVsync=703620981656, Vsync=703637648322, InputEventId=0, HandleInputStart=703638269854, AnimationStart=703638270836, PerformTraversalsStart=703658719326, DrawStart=703658764128, FrameDeadline=703704314986, FrameStartTime=703638266513, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=704007650103, SyncStart=704007807497, IssueDrawCommandsStart=704008238342, SwapBuffers=704306235090, FrameCompleted=704358829024, DequeueBufferDuration=2834, QueueBufferDuration=198647, GpuCompleted=704358829024, SwapBuffersCompleted=704315542926, DisplayPresentTime=0, CommandSubmissionCompleted=704306235090, 
+10-17 05:27:07.125 W/PerformanceMonitor( 5539): 🔴 JANK #1 | Frame: 37 | Duration: 387ms (387099292ns) | States: 
+10-17 05:27:07.140 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.142 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/0/400/266
+10-17 05:27:07.143 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/2/400/266
+10-17 05:27:07.144 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/3/400/266
+10-17 05:27:07.145 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/1/400/266
+10-17 05:27:07.145 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/4/400/266
+10-17 05:27:07.146 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/7/400/268
+10-17 05:27:07.168 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.168 W/HWUI    ( 5539): Image decoding logging dropped!
+10-17 05:27:07.172 D/PhotoPagingSource( 5539): Loading page 2 with size 20
+10-17 05:27:07.175 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=2&limit=20
+10-17 05:27:07.230 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/6/400/266
+10-17 05:27:07.231 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/5/400/266
+10-17 05:27:07.232 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/9/400/261
+10-17 05:27:07.232 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/8/400/266
+10-17 05:27:07.232 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/10/400/266
+10-17 05:27:07.233 I/RealImageLoader( 5539): 💾 Successful (DISK) - https://picsum.photos/id/11/400/266
+10-17 05:27:07.275 E/TaskPersister(  736): File error accessing recents directory (directory doesn't exist?).
+10-17 05:27:07.427 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=2&limit=20 (252ms, unknown-length body)
+10-17 05:27:07.491 D/PhotoPagingSource( 5539): Loading page 3 with size 20
+10-17 05:27:07.493 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=3&limit=20
+10-17 05:27:07.744 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=3&limit=20 (250ms, unknown-length body)
+10-17 05:27:07.789 D/PhotoPagingSource( 5539): Loading page 4 with size 20
+10-17 05:27:07.790 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=4&limit=20
+10-17 05:27:07.855 W/PerformanceMonitor( 5539): 🔴 JANK #2 | Frame: 56 | Duration: 66ms (66273764ns) | States: 
+10-17 05:27:08.046 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=4&limit=20 (254ms, unknown-length body)
+10-17 05:27:08.096 D/PhotoPagingSource( 5539): Loading page 5 with size 20
+10-17 05:27:08.097 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=5&limit=20
+10-17 05:27:08.150 W/PerformanceMonitor( 5539): 🔴 JANK #3 | Frame: 57 | Duration: 75ms (75240171ns) | States: 
+10-17 05:27:08.349 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=5&limit=20 (251ms, unknown-length body)
+10-17 05:27:08.402 D/PhotoPagingSource( 5539): Loading page 6 with size 20
+10-17 05:27:08.403 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=6&limit=20
+10-17 05:27:08.482 W/PerformanceMonitor( 5539): 🔴 JANK #4 | Frame: 58 | Duration: 87ms (87184381ns) | States: 
+10-17 05:27:08.529 D/SatelliteController( 1145): iisInCarrierRoamingNbIotNtn: satellite is disabled
+10-17 05:27:08.654 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=6&limit=20 (249ms, unknown-length body)
+10-17 05:27:08.704 D/PhotoPagingSource( 5539): Loading page 7 with size 20
+10-17 05:27:08.705 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=7&limit=20
+10-17 05:27:08.775 W/PerformanceMonitor( 5539): 🔴 JANK #5 | Frame: 59 | Duration: 64ms (64639249ns) | States: 
+10-17 05:27:08.954 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=7&limit=20 (248ms, unknown-length body)
+10-17 05:27:09.009 D/PhotoPagingSource( 5539): Loading page 8 with size 20
+10-17 05:27:09.012 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=8&limit=20
+10-17 05:27:09.066 W/PerformanceMonitor( 5539): 🔴 JANK #6 | Frame: 60 | Duration: 72ms (72807899ns) | States: 
+10-17 05:27:09.278 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=8&limit=20 (265ms, unknown-length body)
+10-17 05:27:09.352 D/PhotoPagingSource( 5539): Loading page 9 with size 20
+10-17 05:27:09.354 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=9&limit=20
+10-17 05:27:09.424 W/PerformanceMonitor( 5539): 🔴 JANK #7 | Frame: 61 | Duration: 96ms (96542439ns) | States: 
+10-17 05:27:09.609 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=9&limit=20 (255ms, unknown-length body)
+10-17 05:27:09.682 D/PhotoPagingSource( 5539): Loading page 10 with size 20
+10-17 05:27:09.684 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=10&limit=20
+10-17 05:27:09.739 W/PerformanceMonitor( 5539): 🔴 JANK #8 | Frame: 62 | Duration: 92ms (92108385ns) | States: 
+10-17 05:27:09.933 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=10&limit=20 (249ms, unknown-length body)
+10-17 05:27:10.013 D/PhotoPagingSource( 5539): Loading page 11 with size 20
+10-17 05:27:10.015 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=11&limit=20
+10-17 05:27:10.067 W/PerformanceMonitor( 5539): 🔴 JANK #9 | Frame: 63 | Duration: 93ms (93634325ns) | States: 
+10-17 05:27:10.164 D/androidtc(  736): Initializing SystemTextClassifier, type = System
+10-17 05:27:10.165 I/AiAiTextClassifier( 1695): onCreateTextClassificationSession = TextClassificationSessionId {84780b6e-b531-4816-8eb7-d3bf93507963}
+10-17 05:27:10.169 I/AiAiTranslate( 1695): C2T - not in a conversation
+10-17 05:27:10.170 I/ClipboardListener(  995): Clipboard overlay suppressed.
+10-17 05:27:10.175 I/AiAiTextClassifier( 1695): GenerateLinks did not find valid links, returning empty result
+10-17 05:27:10.180 I/AiAiTextClassifier( 1695): GenerateLinks did not find valid links, returning empty result
+10-17 05:27:10.180 I/ClipboardListener(  995): Clipboard overlay suppressed.
+10-17 05:27:10.269 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=11&limit=20 (254ms, unknown-length body)
+10-17 05:27:10.346 D/PhotoPagingSource( 5539): Loading page 12 with size 20
+10-17 05:27:10.347 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=12&limit=20
+10-17 05:27:10.386 D/ProfileInstaller( 5539): Installing profile for com.tuusuario.pinterestfeed.debug
+10-17 05:27:10.401 W/PerformanceMonitor( 5539): 🔴 JANK #10 | Frame: 64 | Duration: 90ms (90385925ns) | States: 
+10-17 05:27:10.599 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=12&limit=20 (250ms, unknown-length body)
+10-17 05:27:10.679 D/PhotoPagingSource( 5539): Loading page 13 with size 20
+10-17 05:27:10.681 I/okhttp.OkHttpClient( 5539): --> GET https://picsum.photos/v2/list?page=13&limit=20
+10-17 05:27:10.734 W/PerformanceMonitor( 5539): 🔴 JANK #11 | Frame: 65 | Duration: 106ms (106762615ns) | States: 
+10-17 05:27:10.931 I/okhttp.OkHttpClient( 5539): <-- 200 https://picsum.photos/v2/list?page=13&limit=20 (249ms, unknown-length body)
+10-17 05:27:11.062 W/PerformanceMonitor( 5539): 🔴 JANK #12 | Frame: 66 | Duration: 90ms (90633191ns) | States: 
+10-17 05:27:11.925 D/ActivityManager(  736): freezing 3938 com.android.vending
+10-17 05:27:11.986 D/ActivityManager(  736): freezing 4014 com.android.vending:background
+10-17 05:27:11.991 D/InetDiagMessage(  736): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-17 05:27:11.993 D/InetDiagMessage(  736): Destroyed 2 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-17 05:27:11.993 D/InetDiagMessage(  736): Destroyed live tcp sockets for uids={10146} in 6ms

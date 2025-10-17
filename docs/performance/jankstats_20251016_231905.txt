@@ -1,0 +1,55 @@
+════════════════════════════════════════════════════════
+JANKSTATS PERFORMANCE REPORT
+Fecha: Thu Oct 16 23:19:05 HAC 2025
+════════════════════════════════════════════════════════
+
+--------- beginning of main
+10-17 05:15:41.362  2717  2717 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:15:41.362  2717  2717 D PerformanceMonitor: 📊 JankStats Monitor Started
+10-17 05:15:41.365  2717  2717 D PerformanceMonitor: Time: 05:15:41.362
+10-17 05:15:41.365  2717  2717 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:15:42.734  2717  2987 W PerformanceMonitor: 🔴 JANK #1 | Frame: 26 | Duration: 314ms (314156164ns) | States: 
+10-17 05:15:44.107  2717  2987 D PerformanceMonitor: ✅ Frame 60 | Duration: 113ms | Jank Rate: 1.67%
+10-17 05:15:44.920  2717  2987 W PerformanceMonitor: 🔴 JANK #2 | Frame: 78 | Duration: 87ms (87372304ns) | States: 
+10-17 05:15:45.166  2717  2987 W PerformanceMonitor: 🔴 JANK #3 | Frame: 79 | Duration: 33ms (33490722ns) | States: 
+10-17 05:15:45.780  2717  2987 W PerformanceMonitor: 🔴 JANK #4 | Frame: 81 | Duration: 107ms (107975071ns) | States: 
+10-17 05:15:46.044  2717  2987 W PerformanceMonitor: 🔴 JANK #5 | Frame: 82 | Duration: 42ms (42985086ns) | States: 
+10-17 05:15:47.460  2717  2987 D PerformanceMonitor: ✅ Frame 120 | Duration: 8ms | Jank Rate: 4.17%
+10-17 05:17:16.350  4373  4373 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:17:16.350  4373  4373 D PerformanceMonitor: 📊 JankStats Monitor Started
+10-17 05:17:16.358  4373  4373 D PerformanceMonitor: Time: 05:17:16.350
+10-17 05:17:16.358  4373  4373 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:17:17.734  4373  4397 W PerformanceMonitor: 🔴 JANK #1 | Frame: 31 | Duration: 387ms (387595812ns) | States: 
+10-17 05:17:19.018  4373  4397 D PerformanceMonitor: ✅ Frame 60 | Duration: 61ms | Jank Rate: 1.67%
+10-17 05:17:19.770  4373  4397 W PerformanceMonitor: 🔴 JANK #2 | Frame: 80 | Duration: 79ms (79972150ns) | States: 
+10-17 05:17:20.073  4373  4397 W PerformanceMonitor: 🔴 JANK #3 | Frame: 81 | Duration: 108ms (108148930ns) | States: 
+10-17 05:17:20.428  4373  4397 W PerformanceMonitor: 🔴 JANK #4 | Frame: 82 | Duration: 150ms (150856094ns) | States: 
+10-17 05:17:20.812  4373  4397 W PerformanceMonitor: 🔴 JANK #5 | Frame: 83 | Duration: 187ms (187291424ns) | States: 
+10-17 05:17:21.148  4373  4397 W PerformanceMonitor: 🔴 JANK #6 | Frame: 84 | Duration: 146ms (146043189ns) | States: 
+10-17 05:17:21.459  4373  4397 W PerformanceMonitor: 🔴 JANK #7 | Frame: 85 | Duration: 71ms (71921503ns) | States: 
+10-17 05:17:21.783  4373  4397 W PerformanceMonitor: 🔴 JANK #8 | Frame: 86 | Duration: 130ms (130318995ns) | States: 
+10-17 05:17:22.034  4373  4397 W PerformanceMonitor: 🔴 JANK #9 | Frame: 87 | Duration: 84ms (84023212ns) | States: 
+10-17 05:19:02.256  4550  4550 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:19:02.256  4550  4550 D PerformanceMonitor: 📊 JankStats Monitor Started
+10-17 05:19:02.266  4550  4550 D PerformanceMonitor: Time: 05:19:02.256
+10-17 05:19:02.266  4550  4550 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:19:03.564  4550  4600 W PerformanceMonitor: 🔴 JANK #1 | Frame: 24 | Duration: 202ms (202901623ns) | States: 
+10-17 05:19:05.633  4550  4600 W PerformanceMonitor: 🔴 JANK #2 | Frame: 56 | Duration: 34ms (34767136ns) | States: 
+10-17 05:19:06.481  4550  4600 D PerformanceMonitor: ✅ Frame 60 | Duration: 21ms | Jank Rate: 3.33%
+10-17 05:19:07.976  4550  4600 D PerformanceMonitor: ✅ Frame 120 | Duration: 2ms | Jank Rate: 1.67%
+10-17 05:19:10.167  4550  4600 D PerformanceMonitor: ✅ Frame 180 | Duration: 8ms | Jank Rate: 1.11%
+10-17 05:19:11.195  4550  4600 D PerformanceMonitor: ✅ Frame 240 | Duration: 7ms | Jank Rate: 0.83%
+10-17 05:19:12.329  4550  4600 D PerformanceMonitor: ✅ Frame 300 | Duration: 6ms | Jank Rate: 0.67%
+10-17 05:19:26.465  4713  4713 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:19:26.465  4713  4713 D PerformanceMonitor: 📊 JankStats Monitor Started
+10-17 05:19:26.467  4713  4713 D PerformanceMonitor: Time: 05:19:26.465
+10-17 05:19:26.467  4713  4713 D PerformanceMonitor: ═══════════════════════════════════════
+10-17 05:19:27.790  4713  4760 W PerformanceMonitor: 🔴 JANK #1 | Frame: 39 | Duration: 150ms (150806168ns) | States: 
+10-17 05:19:28.380  4713  4760 D PerformanceMonitor: ✅ Frame 60 | Duration: 2ms | Jank Rate: 1.67%
+10-17 05:19:29.599  4713  4760 W PerformanceMonitor: 🔴 JANK #2 | Frame: 69 | Duration: 36ms (36373128ns) | States: 
+10-17 05:19:29.834  4713  4760 W PerformanceMonitor: 🔴 JANK #3 | Frame: 70 | Duration: 55ms (55147525ns) | States: 
+10-17 05:19:31.511  4713  4760 D PerformanceMonitor: ✅ Frame 120 | Duration: 5ms | Jank Rate: 2.50%
+
+════════════════════════════════════════════════════════
+FIN DEL REPORTE
+════════════════════════════════════════════════════════
