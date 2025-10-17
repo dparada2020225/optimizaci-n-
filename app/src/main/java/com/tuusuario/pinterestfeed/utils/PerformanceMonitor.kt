@@ -29,8 +29,16 @@ class PerformanceMonitor(private val view: View) {
     private val dateFormat = SimpleDateFormat("HH:mm:ss.SSS", Locale.getDefault())
 
     fun start() {
+        // Obtener window desde el contexto de la Activity
+        val window = (view.context as? android.app.Activity)?.window
+
+        if (window == null) {
+            Log.e(tag, "❌ No se pudo obtener window - JankStats no iniciado")
+            return
+        }
+
         jankStats = JankStats.createAndTrack(
-            view.window,
+            window,
             jankStatsListener
         )
 
