@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.compose") // 🔥 Necesario para Kotlin 2.0+
+    id("org.jetbrains.kotlin.plugin.compose")
     id("kotlin-parcelize")
 }
 
@@ -30,6 +30,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            isDebuggable = true
+            applicationIdSuffix = ".debug"
+        }
     }
 
     compileOptions {
@@ -45,9 +49,6 @@ android {
         compose = true
     }
 
-    // ❌ Ya no se usa composeOptions con Kotlin 2.0
-    // El compilador de Compose viene integrado automáticamente
-
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -56,7 +57,7 @@ android {
 }
 
 dependencies {
-    // BOM de Compose (Septiembre 2024 estable)
+    // BOM de Compose
     val composeBom = platform("androidx.compose:compose-bom:2024.09.01")
     implementation(composeBom)
 
@@ -71,6 +72,10 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.material:material-icons-extended")
+
+    // Material 2 para pull-to-refresh (temporal hasta Material 3 lo soporte)
+    implementation("androidx.compose.material:material:1.7.5")
 
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.8.3")
@@ -94,11 +99,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.6")
 
-    // Performance
+    // Performance - JankStats
     implementation("androidx.metrics:metrics-performance:1.0.0-beta01")
-
-    implementation("androidx.compose.material:material-icons-extended")
-
 
     // Testing
     testImplementation("junit:junit:4.13.2")
