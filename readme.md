@@ -541,9 +541,8 @@ adb install -r releases/pinterest-feed-v1.0-debug.apk
 
 ## 👨‍💻 Autor
 
-**[Tu Nombre Completo]**
-- Carnet: [Tu carnet UVG]
-- Email: [Tu email]
+**[Denil José Parada Cabrera]**
+- Carnet: 24761
 - Universidad del Valle de Guatemala
 - Curso: Programación de Plataformas Móviles
 
