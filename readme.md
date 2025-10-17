@@ -294,7 +294,7 @@ cp app/build/outputs/apk/debug/app-debug.apk releases/pinterest-feed-v1.0-debug.
 5. APK en: `app/build/outputs/apk/release/`
 
 ## 🎥 Demo y Evidencia
-**📹 Video Demo**: https://youtu.be/CamZlttYeek
+
 ### Estructura de Entregables
 
 ```
